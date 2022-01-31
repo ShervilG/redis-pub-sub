@@ -11,5 +11,4 @@ public class RedisPubSubApplication {
   public static void main(String[] args) {
     SpringApplication.run(RedisPubSubApplication.class, args);
   }
-
 }
