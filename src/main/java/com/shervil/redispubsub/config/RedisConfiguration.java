@@ -17,8 +17,8 @@ import org.springframework.data.redis.serializer.GenericToStringSerializer;
 @Configuration
 public class RedisConfiguration {
 
-  @Value("${spring.redis.password}")
-  private String password;
+//  @Value("${spring.redis.password}")
+//  private String password;
 
   @Value("${spring.redis.host}")
   private String host;
@@ -33,7 +33,7 @@ public class RedisConfiguration {
   LettuceConnectionFactory lettuceConnectionFactory() {
     LettuceConnectionFactory lettuceConnectionFactory = new LettuceConnectionFactory();
     lettuceConnectionFactory.setHostName(host);
-    lettuceConnectionFactory.setPassword(password);
+    // lettuceConnectionFactory.setPassword(password);
     lettuceConnectionFactory.setPort(port);
 
     return lettuceConnectionFactory;
